@@ -1,0 +1,100 @@
+focus-room/
+│
+├── backend/
+│   ├── src/
+│   │   ├── app.js
+│   │   ├── server.js
+│   │   │
+│   │   ├── config/
+│   │   │   ├── db.js
+│   │   │   ├── env.js
+│   │   │   └── constants.js
+│   │   │
+│   │   ├── models/
+│   │   │   ├── User.model.js
+│   │   │   ├── Room.model.js
+│   │   │   └── Session.model.js
+│   │   │
+│   │   ├── routes/
+│   │   │   ├── auth.routes.js
+│   │   │   ├── user.routes.js
+│   │   │   ├── room.routes.js
+│   │   │   └── session.routes.js
+│   │   │
+│   │   ├── controllers/
+│   │   │   ├── auth.controller.js
+│   │   │   ├── user.controller.js
+│   │   │   ├── room.controller.js
+│   │   │   └── session.controller.js
+│   │   │
+│   │   ├── services/
+│   │   │   ├── auth.service.js
+│   │   │   ├── session.service.js
+│   │   │   ├── room.service.js
+│   │   │   └── stats.service.js
+│   │   │
+│   │   ├── middlewares/
+│   │   │   ├── auth.middleware.js
+│   │   │   ├── activeSession.middleware.js
+│   │   │   ├── error.middleware.js
+│   │   │   └── rateLimit.middleware.js
+│   │   │
+│   │   ├── jobs/
+│   │   │   └── sessionTimeout.job.js
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── time.util.js
+│   │   │   ├── streak.util.js
+│   │   │   └── response.util.js
+│   │   │
+│   │   └── docs/
+│   │       └── api.md
+│   │
+│   ├── .env
+│   ├── package.json
+│   └── README.md
+│
+├── frontend/
+│   ├── src/
+│   │   ├── main.jsx
+│   │   ├── App.jsx
+│   │   │
+│   │   ├── api/
+│   │   │   ├── axios.js
+│   │   │   ├── auth.api.js
+│   │   │   ├── room.api.js
+│   │   │   └── session.api.js
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Login.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── PublicRooms.jsx
+│   │   │   ├── FocusRoom.jsx
+│   │   │   └── Stats.jsx
+│   │   │
+│   │   ├── components/
+│   │   │   ├── Timer.jsx
+│   │   │   ├── RoomCard.jsx
+│   │   │   ├── SessionGuard.jsx
+│   │   │   └── Navbar.jsx
+│   │   │
+│   │   ├── hooks/
+│   │   │   ├── useAuth.js
+│   │   │   ├── useSession.js
+│   │   │   └── useHeartbeat.js
+│   │   │
+│   │   ├── context/
+│   │   │   ├── AuthContext.jsx
+│   │   │   └── SessionContext.jsx
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── time.js
+│   │   │   └── constants.js
+│   │   │
+│   │   └── styles/
+│   │       └── globals.css
+│   │
+│   ├── package.json
+│   └── README.md
+│
+└── README.md
